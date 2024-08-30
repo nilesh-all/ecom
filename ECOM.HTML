@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Shopping website</title>
+  <link rel="stylesheet" href="Style.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" >
+   </head>
+   <body bgcolor="lightgrey">
+  <script type="text/javascript" src="javascript.js"></script>
+ <section id="header">
+ <a href="#"><img           src="data:image/png;base64,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" width="100" height="80"/>
+<div>
+ <ul id="navbar">
+ <li><a id="url" href="https://www.google.com/search?q=mens+clothes&rlz=1C1CHBF_enIN947IN947&sxsrf=ALiCzsb0tJ6h9AeO2Vs3GZ-QsusmvxfqBQ:1667892492882&source=lnms&tbm=shop&sa=X&ved=2ahUKEwik7L7ch577AhXe93MBHQ_UDGYQ_AUoAXoECAIQAw&biw=1536&bih=722&dpr=1.25 ">MEN</a></li>
+ <li><a id="url"  href="https://www.google.com/search?q=womens+cloth&rlz=1C1CHBF_enIN947IN947&sxsrf=ALiCzsZcb2LkDntQE07cVPUiFplPjA2kzw:1667892660268&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjYoaesiJ77AhXK-XMBHbjkBIYQ_AUoAXoECAIQAw&biw=1536&bih=722&dpr=1.25">WOMEN</a></l <li><a  id="url" href="https://www.google.com/search?q=kids+clothes&rlz=1C1CHBF_enIN947IN947&sxsrf=ALiCzsaR4UzXErbfUhO2mhTRXr5CKtD_cw:1667892625279&source=lnms&tbm=shop&sa=X&ved=2ahUKEwji28-biJ77AhWaPHAKHcPUCBQQ_AUoAXoECAIQAw&biw=1536&bih=722&dpr=1.25">KIDS</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="cart.html"><img src=""></a></li>
+</ul>
+</div>
+<div class="right flex">
+<select onclick="changeLanguage(this.value)">
+<option value="Search" selected="selected">Search</option>
+<option value="Women">Women</option>
+<option value="Men">Men</option>
+<option value="Girl">Girl</option>
+<option value="Boy">Boy</option>
+<option value="Kid">Kid</option>
+</select>
+</div>
+</section>
+<section id="hero">
+<center><b>
+<h2>Super value deals.........!!!</h2><br><br>
+<h1>On all products</h1><br><br>
+<h3>Save more with coupons & up to 70% off!</h3><br><br><br><br>
+<div class="but">
+<button onclick="openTab('https://www.myntra.com/')">Shop Now</button>
+</center>
+</div>
+</section>
+<section id="feature" class="section-p1">
+<div class="fe-box">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_afOq8aQ8boOhuXvqcZjT_VZt0YHIDBnIg&usqp=CAU" width="100" height="80" alt="">
+<h5>Free Shipping</h5>
+</div>
+<div class="fe-box">
+<img src="https://mpng.subpng.com/20200608/kib/transparent-food-delivery-icon-online-order-icon-app-icon-5ede9f368380b8.2476811215916480545386.jpg" width="100" height="80" alt="">
+<h5>Online Order</h5>
+</div>
+<div class="fe-box">
+<img src="https://cdn-icons-png.flaticon.com/512/6475/6475889.png" width="100" height="80" alt="">
+<h5>Save Money</h5>
+</div>
+<div class="fe-box">
+<img src="https://thumbs.dreamstime.com/z/icon-sale-woman-purchase-young-girl-shopaholic-shopping-bags-went-shopping-happy-customer-girl-beautiful-pretty-72490939.jpg" width="100" height="80" alt="">
+<h5>Happy Sells</h5>
+</div>
+<div class="fe-box">
+<img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F6699252-01" width="100" height="80" alt="">
+<h5>24/7 Support</h5>
+</div>
+</section>
+<section id="product1" class="section-p1">
+<h1>Featured Products</h1>
+<p>Winter Collection New Modern Design</p>
+<div class="pro-container">
+<div class="pro">
+<img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSIqM4If9Cnt94tDFx4U232IsXe7mp1Va5XaVjJgprgqmPBOqMP8R4uPBXKdE4WgA7g8oiUgHosBmf2jm-AVx2NumgNn1TBGUizR4sPoATyNLbWcj_kEFvCkQ&usqp=CAE" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Type Shirt Sales Package 1 Piece of Stitched Shirt </h5>
+<h4>₹599.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://imgaz1.chiccdn.com/thumb/view/oaupload/newchic/images/3F/EA/c230127f-2d8d-4e39-a976-c1b54b2d7fa2.jpg?s=360x480" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Colorblock Lapel Holiday Shirts</h5>
+<h4>₹699.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSz5gDa1tuIMmZ9cadjabwrmevkusLGgQ03vhT87EeC9_ZCXe2tWjQfw5tjGvB6jNoCQH7vHldLFhP5XZiyN9TQf1ISROXjQZDExTz1HdmcmpAsciPrUWfvaQ&usqp=CAE" alt="">
+<div class="des">
+<b><span>Anarkali</span>
+<h5>	Pink Colour Oraganza Silk Party Wear Saree </h5>
+<h4>₹1700.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://cdn.shopify.com/s/files/1/0359/0206/2732/products/CA630101.jpg?v=1648553190" alt="">
+<div class="des">
+<b><span>Shaily</span>
+<h5>Lilac Sequin And Resham Embroidered Party Wear Saree </h5>
+<h4>₹1700.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSc1lQPJiZehUagiOLCN7WEwEMf2DnUsyjy-ysmvQdywyNjQ2HnTyhZCU50isKRgi-_427x_wpgYa_jzgLGZ3CtuRiocQW2hwVOL92Iul5aWEdIZzgJOmIMLg&usqp=CAE" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Type Shirt Sales Package 1 Piece of Stitched Shirt </h5>
+<h4>₹599.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ3wX8QYatE7Z68UWHXUNfxviqEDYx-accw2I1arFf2pAX3Wx0ph7NeGM1WR3pHBWv6HgVhC4rH3b_mrmyHtJI1O6VZ3k105CsujnZPWb0&usqp=CAE" alt="">
+<div class="des">
+<b><span>Zara</span>
+<h5>Tokyo Talkies Women Pretty Pink Solid Knitted Dress </h5>
+<h4>₹399.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTUJhp2NXVranYfidCVWh8e4qcxENZU9upRAXReO8FtdSu_f5UKc2L4w-9_DGcjW10-_fOgIGBEwPQiFZl14Sfd62p79MzAUgPwheQkjrtNcUc9AUj-k3O17g&usqp=CAE" alt="">
+<div class="des">
+<b><span>H&M</span>
+<h5>Sera Women Stylish Black Floral Dress </h5>
+<h4>₹599.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRgbjwz7eueqka-IDcgachVLRRk-JBmhcJr9TCuIVJVeKgPEB-pDqlN1qdAeZLsoFM8-oJ7-5R-5SCe8THScNvhJNSMQarfFi0cOKLp7m8tcHVVWB0MtYBj&usqp=CAE" alt="">
+<div class="des">
+<b><span>Monika</span>
+<h5>Surpassing Blue Sequin Party Wear Saree</h5>
+<h4>₹1999.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRwK49OGVdyTfcmHRPqKxqRzlbVTxjM2oJltXlEQU7mStbsPd8AshgoCd5Mx5gxPfTDi9-1Rs9vOYTQLcIOR8-1ch0nC0ng3mWbNlPgV3Fb4kYeH5YSF0DL&usqp=CAE" alt="">
+<div class="des">
+<b><span>Zara</span>
+<h5>	Saubhagya Indian Fit and Flare Dress For Women (Rose Gold, M)</h5>
+<h4>₹1499.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT6ioHiBF5fl-eyy_QIqReMAEHsjeeOktL4adHcnKs67xQkuOyV5zVFJLkhw5SlG-E7U5bK7z8ZMG_u-Inq2YbN79-jR9EZVJzpIPxFTXyir_eAKX06QhkJJQ&usqp=CAE" alt="">
+<div class="des">
+<b><span>H&M</span>
+<h5>Impressive Designer Embroidered And Handwork Front Cut Designer Wear Outfit Along ...</h5>
+<h4>₹1515.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSIqLRus9NpCZyGz-M8XmWsBRUflwWkcuVnDGb9yvuOu62FT3E_IIo-fiKStmwsVH0CK73dX7RXbmMBtr-iiEthV6uRP_Fp7jwxlQM9I5PY&usqp=CAE" alt="">
+<div class="des">
+<b><span>Gucci</span>
+<h5>Navy Blue Stylish Beautiful Gown With Dupatta</h5>
+<h4>₹2990.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQsHwjsuUk6DyYIbetL3nyRzmaSyjXLF8Tx5SsL3iQe0zOoiHGJSit_JBbvLOe286qlmofh9M4y2h2Ks7m-QVRlp0C-6oAB36vyiWSiXnEPCEq7E1Iz7Grksg&usqp=CAE" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>KRA Men's Oversized Pockets Cargos</h5>
+<h4>₹545.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="banner" class="section-m1">
+<h4>Repair Services</h4>
+<h2>Up to <span>70% off</span> - All t-Shirts & Accessories</h2>
+<button class="normal">Explore More</button>
+</section>
+<section id="product1" class="section-p1">
+<h1>New Arrivals</h1>
+<p>Winter Collection New Modern Design</p>
+<div class="pro-container">
+<div class="pro">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLK0QdxQ7OiM3mBij4hTWPCeOODrgLYl9vtQ&usqp=CAU" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Light Aqua Kangaroo Pocket Hoodie</h5>
+<h4>₹515.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://img.faballey.com/images/Product/JAC00505Z/1.jpg" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>TGrey Leather Broad Lapel Collar Cropped Jacket</h5>
+<h4>₹599.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://img.faballey.com/images/Product/SWT00208Z/1.jpg" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Green Colorblock Full Sleeve Jumper</h5>
+<h4>₹699.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgNNC-E14fNnfry7CTY6XDqqOFyxX6qNYwm0XGkf5Itid_WgzFucfhopCZHQNUdo9MfSk&usqp=CAU" alt="">
+<div class="des">
+<b><span>Roadster</span>
+<h5>Women Blue Washed Denim Jacket</h5>
+<h4>₹499.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://www.beyoung.in/api/cache/catalog/products/new_winter_wear_5_10_2022/
+light_grey_box_knitted_sweatshirt_for_men_front_base_400x533.jpg" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Metal Grey Box Knitted Sweatshirt for Men</h5>
+<h4>₹799.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiyLI5dMvqcFoeb7FhmoF2XzBwcbFyBFPLwQ&usqp=CAU" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Brown Jacket for Men</h5>
+<h4>₹749.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+<div class="pro">
+<img src="https://www.finder.com.au/niche-builder/625cc7fd82c80.png" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>Black Leather Jacket for Men</h5>
+<h4>₹649.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+
+<div class="pro">
+<img src="https://www.beyoung.in/api/cache/catalog/products/new_winter_wear_5_10_2022/white_windcheater_jacket_for_men_front_base_400x533.jpg" alt="">
+<div class="des">
+<b><span>Adidas</span>
+<h5>White Windcheater Jacket for Men</h5>
+<h4>₹499.00</h4>
+<h3>Free delivery</h3>
+<input type="button" value="BUY" Onclick="shop()"/>
+</b>
+</div>
+</div>
+</div>
+</section>
+<section id="sm-banner" class="section-p1">
+<div class="banner-box">
+<h4>crazy deals</h4>
+<h2>buy 1 get 1 free</h2>
+<span>The best classic dress is on sale at Fastore</span>
+<button class="white">Learn More</button>
+</div>
+<div class="banner-box banner-box2">
+<h4>sring/summer</h4>
+<h2>upcoming season</h2>
+<span>The best classic dress is on sale at Fastore</span>
+<button class="white">Learn More</button>
+</div>
+</section>
+<section id="banner3">
+<div class="banner-box">
+<h2>SEASON SALE</h2>
+<h3>winter colletion -50% off</h3>
+</div>
+<div class="banner-box banner-box2">
+<h2>NEW FOOTWEAR COLLECTION</h2>
+<h3>Sring/Summer 2022</h3>
+</div>
+<div class="banner-box banner-box3">
+<h2>T-SHIRTS</h2>
+<h3>New Trendy Prints</h3>
+</div>
+</setion>
+<section id="newsletter" class="section-p1 section-m1">
+<div class="newstext">
+<h4>Sign Up For Newsletters</h4>
+<p>Get E-mail updates about our latest shop and <span>special offers.<span></p>
+</div>
+<div class="form">
+<input type="email" id="email" value="your email address" />
+<button Onclick="sign()">Sign Up </button>
+</div>
+</section>
+<br>
+<footer class="section-p1">
+<div class="col">
+<img src="data:image/png;base64,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" width="100" height="80">
+<h4>Contact</h4>
+<p><strong>Address:</strong> 556 Hingna road, Wanadongri, Nagpur</p>
+<p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+<p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+<div class="follow">
+<h4>Follow us</h4>
+<div class="icon">
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-pinterest-p"></i>
+<i class="fab fa-youtube"></i>
+</div>
+</div>
+</div>
+<div class="col">
+<h4>About</h4>
+<a href="#">About us</a>
+<a href="#">Deliver Information</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms & Conditions</a>
+<a href="#">Contact us</a>
+</div>
+<div class="col">
+<h4>My Account</h4>
+<a href="#">Sign In</a>
+<a href="#">View Cart</a>
+<a href="#">My Wishlist</a>
+<a href="#">Track My Order</a>
+<a href="#">Help</a>
+</div>
+</footer>
+
+</body>
+</html>

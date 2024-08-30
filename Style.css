@@ -1,0 +1,294 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box; font-family:'Times New Roman', Times, serif
+}
+.section-p1{
+padding: 40px 80px;
+}
+.section-m1{
+margin: 40px 0;
+}
+button.normal{
+font-size:14px;
+font-width=600;
+padding:15px 30px;
+color:black;
+background-color:white;
+border-radius;4px;
+cursor:pointer;
+border:none;
+transition:0.2s;
+}
+button.white{
+font-size:13px;
+font-width=600;
+padding:11px 18px;
+color:black;
+background-color:transparent;
+cursor:pointer;
+border:1px solid white;
+outline:none;
+transition:0.2s;
+}
+body{
+width:100%
+}
+#header {
+display:flex; align-items: center; justify-content: space-between; padding: 20px 80px;  background-color:white; box-shadow: 0 5px 15px rgba(0,0,0,0.6) ;
+position:sticky;
+}
+#navbar{
+display:flex; align-items: center; justify-content:center; position:sticky;
+}
+#navbar li {
+list-style: none;
+padding: 20px;
+}
+#navbar li a{
+text-decoration: none; font-size:16px; font-weight:bold; color: black;
+}
+#hero {
+background-image: url("https://admin.meesho.io/content/images/2022/01/1__xCiBpB8vuRZNVgYuxwV_g.png");
+width:1525px ; height: 90vh;
+background-position: 100px 100px 160px 60px; box-shadow:   0 5px 15px rgba(0,0,0,0.6);
+display:flexbox; align-items: flex-start; justify-content: center; flex-direction: column;
+background-size:cover;
+}
+#hero h1{
+color:antiquewhite;
+font-size: 80px;font-style: italic;
+}
+#hero h2{
+font-size:100px;
+color:red; font-style: italic;
+}
+#hero  .but:hover button {
+background:lightgreen;
+border:1px solid green;
+color:lightsalmon; border:0;
+padding: 14px 80px 14px 80px; background-repeat: no-repeat; cursor: pointer; font-weight: bold; font-size:15px;
+}
+#feature{
+display:flex; align-items:center; justify-content:space-between;flex-wrap:wrap;
+}
+#feature .fe-box {
+width: 180px;
+border: 1px solid antiquewhite; text-align:center;
+padding: 25px 15px;
+margin: 15px 0;
+box-shadow: 20px 20px 34px rgba(0,0,0,0.3); border-radius:4px;
+}
+#feature .fe-box:hover{
+box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+#feature .fe-box h5{
+padding:9px 8px 6px 8px;
+line-height:1;
+border-radius: 4px;
+color:blueviolet;
+background-color: antiquewhite;
+}
+#feature .fe-box img{
+width:100%; margin-bottom:10px;
+}
+#btn:hover{
+background: green;
+color: white;
+}
+#product1{
+text-align: center;
+}
+#product1 h1{
+font-color:red; font-size:50px;
+}
+#product1 .pro-container{
+display:flex; justify-content:space-between; padding-top:20px; flex-wrap:wrap;
+}
+#product1 .pro{
+width:23%; min-width:250px; padding:20px 12px;
+border: 1px solid antiquewhite; border-radius:25px; cursor:pointer; box-shadow:20px 20px 30px rgba(0,0,0,0.03); margin: 15px 0; transition:0.2s ease;
+}
+#product1 .pro:hover{
+box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product1 .pro img{
+width:100%;
+border-radius:20px;
+}
+#product1 .pro .des{
+text-align:start; padding:10px 0;
+}
+#product1 .pro .des span{
+color:goldenrod; font-size:12px;
+}
+#product1 .pro .des h4{
+color:green; font-size:15px;
+}
+#banner{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-image: url("https://en.pimg.jp/064/752/304/1/64752304.jpg");
+width: 100%;
+height: 40vh;
+background-size: cover;
+background-position: center;
+}
+#banner h4{
+color: purple;
+font-size: 16px;
+}
+#banner h2{
+color: black;
+font-size: 30px;
+padding: 10px 0;
+}
+#banner h2 span{
+color: red;
+}
+#banner button:hover{
+background: green;
+color: white;
+}
+#sm-banner{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align:center;
+background-image: url("https://st2.depositphotos.com/1144472/10560/i/450/depositphotos_105604866-stock-photo-woman-in-casual-clothing-with.jpg");
+min-width: 580px;
+height: 50vh;
+background-size: cover;
+background-position: center;
+padding:30px;
+}
+#sm-banner .banner-box2{
+background-image: url("https://media.istockphoto.com/id/576933978/photo/row-of-colourful-apparel-on-hangers-of-retail-shop.jpg?s=612x612&w=0&k=20&c=1QqpGTvlOMkvsM31qiZ0Pg3yAlWZupyiOmq69mcW2X0=");
+}
+#sm-banner h4{
+color:purple;
+font-size:20px;
+font-weight:300;
+}
+#sm-banner h2{
+color:black;
+font-size:28px;
+font-weight:800px;
+}
+#sm-banner span{
+color:black;
+font-size:14px;
+font-weight:500px;
+padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+background:green;
+border:1px solid green;
+}
+#banner3{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:0 80px;
+}
+#banner3 .banner-box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align:center;
+background-image: url("https://previews.123rf.com/images/primagefactory/primagefactory1706/primagefactory170600044/79467127-young-student-using-virtual-reality-technology-headset-looking-online-shopping-website-on-white-back.jpg");
+min-width: 30%;
+height: 30vh;
+background-size: cover;
+background-position: center;
+padding:20px;
+margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+background-image: url("https://thumbs.dreamstime.com/z/young-man-woman-walking-shopping-bags-full-length-shot-young-men-women-walking-shopping-bags-isolated-147412880.jpg");
+}
+#banner3 .banner-box3{
+background-image: url("https://images.pexels.com/photos/972995/pexels-photo-972995.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+#banner3 h2{
+font-weight:900;
+font-size:22px;
+}
+#banner3 h3{
+color:red;
+font-weight:800;
+font-size:15px;
+}
+##banner3 .banner-box{
+background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_79467127_young-student-using-virtual-reality-technology-headset-looking-online-shopping-website-on-white-back.html&psig=AOvVaw2LbqmSGBkow-zjEyw7U0pN&ust=1667907532960000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCMja97f9m_sCFQAAAAAdAAAAABAE.jpg");
+}
+#newsletter {
+color:white;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+background-image:url("https://images.unsplash.com/photo-1617069489895-76388f95886a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2049&q=80.jpg");
+width:100%;
+background-repeat:repeat;
+background-position:20% 30%;
+background-color:transparant;
+}
+#newsletter h4{
+font-size:22px;
+font-weight:700;
+color:white;
+}
+#newsletter p{
+font-size:14px;
+font-weight:600;
+color:white;
+}
+#newsletter p span{
+color:orange;
+}
+#newsletter input{
+height:3.125rem;
+padding:0 1.25em;
+font-size:14px;
+width:100%;
+border:1px solid transparent;
+border-radius:4px;
+outline:none;
+align:right;
+}
+#newsletter button{
+background-color:green;
+color:white;
+white-space:nowrap:
+}
+footer {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 100%;
+background-color:white;
+border-radius:4px;
+}
+footer .col{
+display: flex;
+flex-direction: column;;
+align-items: flex-start;
+margin-bottom: 20px;
+}
+
+#newsletter .newstext:hover button{
+background:green;
+border:4px solid green;
+align:center;
+}
